@@ -1,0 +1,39 @@
+syntax="proto3";
+package webapi;
+
+// import "common/common.proto";
+
+service Hello {
+  // option (common.service).public = true;
+
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc GetPictureList (GetPictureListReq) returns (GetPictureListResp);
+}
+
+message HelloRequest{
+  string name = 1;
+}
+
+message HelloReply{
+  // common.Result result = 1;
+  string message = 2;
+}
+
+message GetPictureListReq {
+    int32 page =  1;
+    int32 limit = 2;
+}
+
+message GetPictureListResp {
+    int32 statusCode = 1;
+    repeated Picture data = 2;
+    string errMsg = 3;
+}
+
+message Picture {
+    string id = 1;
+    string title = 2;
+    string name = 3;
+    int32 imgNum = 4;
+    string imgSrc = 5;
+}
