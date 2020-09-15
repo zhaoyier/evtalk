@@ -16,7 +16,7 @@ var info Info = Info{
 
 var externalDocs ExternalDocs = ExternalDocs{
 	Description: "Find out more about Swagger",
-	URL:         "eventag.cn/evtalk",
+	URL:         "git.ezbuy.me/ezbuy/evtalk",
 }
 
 // SetVersion 设置版本号

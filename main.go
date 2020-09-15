@@ -17,7 +17,7 @@ package main
 // import "evtalk/cmd"
 
 import (
-	"eventag.cn/evtalk/cmd"
+	"git.ezbuy.me/ezbuy/evtalk/cmd"
 )
 
 func main() {

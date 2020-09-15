@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"strings"
 
-	"eventag.cn/evtalk/common/errors"
-	"eventag.cn/evtalk/common/tools"
+	"git.ezbuy.me/ezbuy/evtalk/common/errors"
+	"git.ezbuy.me/ezbuy/evtalk/common/tools"
 )
 
 // GetModuleInfo find and get module info , return module [ name ,path ]

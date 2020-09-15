@@ -3,7 +3,7 @@ package myswagger
 import (
 	"testing"
 
-	"eventag.cn/evtalk/common/tools"
+	"git.ezbuy.me/ezbuy/evtalk/common/tools"
 )
 
 func TestDomain(t *testing.T) {
@@ -15,7 +15,7 @@ func TestDomain(t *testing.T) {
 	tag.Description = "Everything about your Pets"
 	tag.ExternalDocs = &ExternalDocs{
 		Description: "Find out more",
-		URL:         "eventag.cn/evtalk",
+		URL:         "git.ezbuy.me/ezbuy/evtalk",
 	}
 	doc.AddTag(tag)
 

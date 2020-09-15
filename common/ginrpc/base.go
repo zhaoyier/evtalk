@@ -13,16 +13,16 @@ import (
 	"strings"
 	"unicode"
 
-	"eventag.cn/evtalk/common/log"
+	"git.ezbuy.me/ezbuy/evtalk/common/log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator"
 
-	"eventag.cn/evtalk/common/errors"
-	"eventag.cn/evtalk/common/message"
-	"eventag.cn/evtalk/common/myast"
-	"eventag.cn/evtalk/common/mydoc"
-	myreflect "eventag.cn/evtalk/common/reflect"
+	"git.ezbuy.me/ezbuy/evtalk/common/errors"
+	"git.ezbuy.me/ezbuy/evtalk/common/message"
+	"git.ezbuy.me/ezbuy/evtalk/common/myast"
+	"git.ezbuy.me/ezbuy/evtalk/common/mydoc"
+	myreflect "git.ezbuy.me/ezbuy/evtalk/common/reflect"
 )
 
 func (b *_Base) parseReqResp(typ reflect.Type, isObj bool) (reflect.Type, reflect.Type) {
@@ -537,7 +537,7 @@ func (b *_Base) getDefaultComments(objName, objFunc string, num int) (routerPath
 	if b.isBigCamel { // big camel style.大驼峰
 		routerPath = b.prefix + "/" + b.service + "." + objName + "/" + objFunc
 	} else {
-		routerPath = b.prefix + "/" + b.service + "." + Ucfirst(objName) + "/" + Lcfirst(objFunc)
+		routerPath = b.prefix + "/" + b.service + "." + Ucfirst(objName) + "/" + Ucfirst(objFunc)
 	}
 
 	return

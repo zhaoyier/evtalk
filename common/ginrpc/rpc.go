@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	// "evtalk/common/api"
-	"eventag.cn/evtalk/common/api"
+	"git.ezbuy.me/ezbuy/evtalk/common/api"
 
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
@@ -86,7 +86,7 @@ func Default() *_Base {
 	b := new(_Base)
 	b.Model(api.NewAPIFunc)
 	b.Dev(true)
-	b.prefix = "api"
+	b.prefix = "/api"
 
 	return b
 }

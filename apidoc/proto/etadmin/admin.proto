@@ -1,0 +1,83 @@
+syntax="proto3";
+package etadmin;
+
+// service Admin {
+//     //登录
+//     rpc AdminLogin (AdminLoginReq) returns (AdminLoginResp);
+//     //退出
+//     rpc AdminLogout (AdminLogoutReq) returns (AdminLogoutResp);
+// }
+
+message AdminLogoutReq {
+
+}
+
+message AdminLogoutResp {
+
+}
+
+message AdminLoginReq {
+    string username = 1;
+    string password = 2;   // 需要base64加密
+    string sourceCode = 3; //默认web
+}
+
+message AdminLoginResp {
+    bool status = 1;
+    string  code = 2;
+    string  message = 3; // 权限系统那边定义的字段。跟关键字冲突，不过不影响
+    LoginData data = 4;
+}
+
+message LoginData {
+    int64 userId = 1;
+    bool needModify = 2;
+    string token = 3;
+    int32 timeToExpire = 4;
+    MenuFunctionsData menuFunctionsData = 5;
+    GroupsData groupsData = 6;
+    RolesData rolesData = 7;
+    string modifyMgs = 8;
+}
+
+message GroupInfo {
+    int64 groupId = 1;
+    string groupName = 2;
+}
+
+message GroupsData {
+    repeated  GroupInfo  groupInfo = 1;
+}
+
+message RoleInfo {
+    int64 roleId = 1;
+    string roleName = 2;
+}
+
+message RolesData {
+    repeated RoleInfo roleInfo = 1;
+}
+
+message MenuFunctionsData {
+    repeated  Menus menus = 1;
+    repeated  Function functions = 2;
+}
+
+  message Menus {
+    int64 menuId = 1;
+    string menuName = 2;
+    int32 menuLevel = 3;
+    string url = 4;
+    bool isUnfold = 5;
+    int32 order = 6;
+    bool newWindow = 7;
+    string icon = 8;
+    repeated Menus childMenus = 9;
+}
+
+message Function {
+    int32   menuId = 1;
+    string  functionName = 2;
+    string  functionCode = 3;
+    string  interfaceUrl = 4;
+}

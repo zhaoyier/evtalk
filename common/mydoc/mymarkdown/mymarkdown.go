@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"eventag.cn/evtalk/common/tools"
+	"git.ezbuy.me/ezbuy/evtalk/common/tools"
 )
 
 // DocMarkdown

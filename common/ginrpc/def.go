@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"strings"
 
-	"eventag.cn/evtalk/common/api"
+	"git.ezbuy.me/ezbuy/evtalk/common/api"
 	"github.com/gin-gonic/gin"
 )
 
@@ -63,8 +63,8 @@ var (
 	package {{.PkgName}}
 	
 	import (
-		// "eventag.cn/github.com/xxjwxc/ginrpc"
-		// "eventag.cn/evtalk/common/log"
+		// "git.ezbuy.me/ezbuy/evtalk/github.com/xxjwxc/ginrpc"
+		// "git.ezbuy.me/ezbuy/evtalk/common/log"
 	)
 	
 	func init() {

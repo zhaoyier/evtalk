@@ -4,9 +4,9 @@ import (
 	"html/template"
 	"sort"
 
-	"eventag.cn/evtalk/common/mydoc/mymarkdown"
-	"eventag.cn/evtalk/common/mydoc/myswagger"
-	"eventag.cn/evtalk/common/tools"
+	"git.ezbuy.me/ezbuy/evtalk/common/mydoc/mymarkdown"
+	"git.ezbuy.me/ezbuy/evtalk/common/mydoc/myswagger"
+	"git.ezbuy.me/ezbuy/evtalk/common/tools"
 )
 
 type model struct {

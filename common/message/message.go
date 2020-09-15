@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"sync"
 
-	"eventag.cn/evtalk/common/log"
+	"git.ezbuy.me/ezbuy/evtalk/common/log"
 )
 
 // MessageBody 消息头

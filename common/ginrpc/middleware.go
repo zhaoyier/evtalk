@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"eventag.cn/evtalk/common/log"
-	"eventag.cn/evtalk/common/message"
+	"git.ezbuy.me/ezbuy/evtalk/common/log"
+	"git.ezbuy.me/ezbuy/evtalk/common/message"
 
 	"github.com/gin-gonic/gin"
 )

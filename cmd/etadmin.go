@@ -17,14 +17,13 @@ package cmd
 import (
 	"fmt"
 
-	"git.ezbuy.me/ezbuy/evtalk/service/webapi"
-
+	"git.ezbuy.me/ezbuy/evtalk/service/admin"
 	"github.com/spf13/cobra"
 )
 
-// webapiCmd represents the webapi command
-var webapiCmd = &cobra.Command{
-	Use:   "webapi",
+// etadminCmd represents the etadmin command
+var etadminCmd = &cobra.Command{
+	Use:   "etadmin",
 	Short: "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
@@ -33,21 +32,23 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("webapi called")
-		webapi.Restful()
+		// TODO: Work your own magic here
+		fmt.Println("etadmin called")
+		admin.Restful()
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(webapiCmd)
+	rootCmd.AddCommand(etadminCmd)
 
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// webapiCmd.PersistentFlags().String("foo", "", "A help for foo")
+	// etadminCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// webapiCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// etadminCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+
 }

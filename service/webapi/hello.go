@@ -1,7 +1,8 @@
 package webapi
 
 import (
-	"eventag.cn/evtalk/rpc/webapi"
+	// "git.ezbuy.me/ezbuy/evtalk/rpc/webapi"
+	webapi "git.ezbuy.me/ezbuy/evtalk/rpc/proto/etwebapi"
 
 	"fmt"
 

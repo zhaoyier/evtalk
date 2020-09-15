@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"eventag.cn/evtalk/common/mydoc/mymarkdown"
-	"eventag.cn/evtalk/common/mydoc/myswagger"
+	"git.ezbuy.me/ezbuy/evtalk/common/mydoc/mymarkdown"
+	"git.ezbuy.me/ezbuy/evtalk/common/mydoc/myswagger"
 )
 
 func (m *model) analysisStructInfo(info *StructInfo) {

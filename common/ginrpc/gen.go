@@ -11,8 +11,8 @@ import (
 	"text/template"
 	"time"
 
-	"eventag.cn/evtalk/common/serializing"
-	"eventag.cn/evtalk/common/tools"
+	"git.ezbuy.me/ezbuy/evtalk/common/serializing"
+	"git.ezbuy.me/ezbuy/evtalk/common/tools"
 )
 
 const (

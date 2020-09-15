@@ -1,14 +1,14 @@
 syntax="proto3";
-package webapi;
+package etwebapi;
 
 // import "common/common.proto";
 
-service Hello {
-  // option (common.service).public = true;
+// service Hello {
+//   // option (common.service).public = true;
 
-  rpc SayHello (HelloRequest) returns (HelloReply);
-  rpc GetPictureList (GetPictureListReq) returns (GetPictureListResp);
-}
+//   rpc SayHello (HelloRequest) returns (HelloReply);
+//   rpc GetPictureList (GetPictureListReq) returns (GetPictureListResp);
+// }
 
 message HelloRequest{
   string name = 1;
